@@ -2,6 +2,8 @@ body {
   background-color: #121212;
 }
 
+/*Estilos de NavBar */
+
 .navBarDiv {
   background: #ffffff;
   border-bottom: 1px solid #000000;
@@ -25,4 +27,11 @@ body {
   border-radius: 9%;
   padding: 3px;
   list-style: none;
+}
+
+/* Estilos itemListConainer */
+
+.logoAdidas {
+  height: auto;
+  width: auto;
 }
