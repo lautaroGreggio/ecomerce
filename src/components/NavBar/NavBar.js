@@ -1,6 +1,5 @@
 import React from "react"
-
-
+import Carrito from "../CartWidget/CartWidget"
 
 
 const NavBar = () => {
@@ -14,10 +13,9 @@ const NavBar = () => {
                     <li><a href="*">Calzado</a></li>
                     <li><a href="*">Colección 2022</a></li>
                     <li><a href="*">Ofertas</a></li>
-                    <a href="<Carrito/>" class="large material-icons">add_shopping_cart </a>
+                    <li><Carrito/></li>
                     
-                    
-                    
+
                 </ul>
             </div>
         </nav>
@@ -28,5 +26,5 @@ const NavBar = () => {
 }
 
 
-export default NavBar
+export default NavBar;
 

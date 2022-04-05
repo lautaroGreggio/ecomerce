@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #121212;
 }
@@ -29,9 +34,6 @@ body {
   list-style: none;
 }
 
-/* Estilos itemListConainer */
 
-.logoAdidas {
-  height: auto;
-  width: auto;
-}
+
+

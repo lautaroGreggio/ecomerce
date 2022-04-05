@@ -1,0 +1,45 @@
+.contenedorProducto {
+  width: 300px;
+  height: 300px;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+
+.imagenProducto {
+    height: 100%;
+    width: auto;
+}
+
+.contenedorDescripcion {
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    margin-top: -22px;
+    
+}
+
+.nombreProducto {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.valorProducto {
+    text-align: justify;
+}
+
+.stockProducto {
+    text-align: justify;
+}
+
+.botonSumar {
+    margin: 5px;
+}
+
+.botonRestar {
+    margin: 5px;
+}
