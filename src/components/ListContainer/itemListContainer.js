@@ -1,5 +1,7 @@
 import React from "react"
 import Counter from "../counter/counter";
+import ItemList from "../itemList/itemList";
+
 
 const ArticulosEnVenta = (props) => {
     return(
@@ -9,8 +11,10 @@ const ArticulosEnVenta = (props) => {
             <p className="nombreProducto">{props.producto}</p>
             <p className="valorProducto">Valor:{props.valor}</p>
             <p className="stockProducto">Stock:{props.stock}</p>
-            
             <Counter/>
+            <ItemList/>
+            
+            
 
         </div>
     </div>
