@@ -27,11 +27,10 @@ body {
   border: 1px solid #000000;
 }
 
-.producto {
-  margin: 10px;
-  border-radius: 9%;
+.nombreProducto{
+  color: #ffffff;
+  margin: 5px;
   padding: 3px;
-  list-style: none;
 }
 
 

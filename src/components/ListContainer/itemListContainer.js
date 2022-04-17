@@ -1,25 +1,27 @@
-import React from "react"
-import Counter from "../counter/counter";
-import ItemList from "../itemList/itemList";
+import { useState, useEffect } from 'react'
+import { getProducts } from '../../asyncmock'
+import ItemList from '../itemList/itemList'
 
+const ItemListContainer = (props) => {
+    const [products, setProducts] = useState([])
 
-const ArticulosEnVenta = (props) => {
+    useEffect(() => {
+        getProducts().then(prods => {
+            setProducts(prods)
+        }).catch(error => {
+            console.log(error)
+        })
+    }, [])
+
+    
+
     return(
-    <div className="contenedorProducto">
-        <img className="imagenProducto" src={require(`../../media/img/${props.imagen}.jpg`)}   alt="logo"/>;
-        <div className="contenedorDescripcion">
-            <p className="nombreProducto">{props.producto}</p>
-            <p className="valorProducto">Valor:{props.valor}</p>
-            <p className="stockProducto">Stock:{props.stock}</p>
-            <Counter/>
-            <ItemList/>
-            
-            
-
+        <div>
+            <h1>{props.greeting}</h1>
+            <ItemList products={products}/>
         </div>
-    </div>
     )
 }
 
-export default ArticulosEnVenta;
+export default ItemListContainer
 

@@ -14,18 +14,22 @@
     width: auto;
 }
 
-.contenedorDescripcion {
+.cardProducto {
     text-align: center;
     padding: 30px;
-    background: #ffffff;
+    background: #212526;
     margin-top: -22px;
+    border: 1px solid #ffffff;
+   
     
 }
 
 .nombreProducto {
     font-size: 1.3rem;
     padding-bottom: 10px;
-    text-align: justify;
+    text-align: center;
+    margin: 5px;
+    
 }
 
 .valorProducto {
@@ -40,6 +44,17 @@
     margin: 5px;
 }
 
+.numeroContador {
+    color: #ffffff;
+    margin: 6px;
+}
+
 .botonRestar {
     margin: 5px;
+}
+
+.agregarCarrito {
+    margin: 3px;
+    
+    
 }

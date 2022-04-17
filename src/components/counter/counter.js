@@ -22,9 +22,9 @@ const Counter = ({initial, stock, onAdd}) => {
     return(
         <div>
             <button className='waves-effect waves-light btn botonRestar' onClick={decrement}>-</button> 
-            <p>{count}</p>
+            <p className='numeroContador'>{count}</p>
             <button className='waves-effect waves-light btn botonSumar' onClick={increment}>+</button>
-            <button className='waves-effect waves-light btn' onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <button className='waves-effect waves-light btn agregarCarrito' onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
     )
 } 
